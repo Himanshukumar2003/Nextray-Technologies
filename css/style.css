@@ -3119,9 +3119,23 @@ textarea.form-control {
 
 
 .Lighting {
-    object-fit: contain;
+    object-fit: cover;
     width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 20px;
 
+}
+
+
+.card-border {
+    border: 2px dotted var(--pbmit-global-color);
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    min-height: 200px;
+    align-items: center;
+    justify-content: center;
 }
 
 .products-cards {
