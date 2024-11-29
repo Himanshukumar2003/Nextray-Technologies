@@ -1589,7 +1589,12 @@
     transition: all .25s ease-in-out;
 }
 
-.service-sidebar .all-post-list ul li a:before {
+.service-sidebar .all-post-list ul .active {
+    color: var(--pbmit-global-color) !important;
+
+}
+
+.service-sidebar .all-post-list ul a:before {
     position: absolute;
     content: '\e8eb';
     font-family: "pbminfotech-base-icons";
@@ -3127,6 +3132,10 @@ textarea.form-control {
 
 }
 
+.section-sm {
+    padding-top: 50px;
+}
+
 
 .card-border {
     border: 2px dotted var(--pbmit-global-color);
@@ -3242,4 +3251,172 @@ footer h4 {
     gap: 20px;
 
     align-items: center;
+}
+
+table {
+    border: 2px solid var(--pbmit-global-color);
+}
+
+/* Table container styling */
+.table-container {
+    border-radius: 0.25rem;
+    overflow-x: auto;
+    padding: 20px;
+}
+
+/* Table header styling */
+.table-header {
+    background-color: var(--pbmit-global-color) !important;
+}
+
+.table-header th {
+    background-color: transparent !important;
+    text-align: center;
+    /* Centering header text */
+    color: white !important;
+    font-weight: 700 !important;
+}
+
+/* Table row hover effect */
+.table-hover tbody tr:hover {
+    background-color: var(--pbmit-link-color-hover);
+    transition: background-color 0.3s ease;
+}
+
+/* Sticky table header */
+thead {
+    position: sticky;
+    top: 0;
+    background-color: var(--pbmit-global-color);
+    z-index: 1;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Table body styling */
+.table tbody tr {}
+
+th {
+    color: white !important;
+}
+
+/* Hover effect on table rows */
+.table-hover>tbody>tr:hover>* {
+    background-color: var(--pbmit-link-color-hover, 0.5) !important;
+    color: white;
+}
+
+th {
+    font-weight: 500;
+}
+
+/* Table cell styling - Ensuring same size, centering text, hiding overflow, and increasing padding */
+.table td,
+.table th {
+
+    padding: 10px;
+
+    /* Increased padding for all columns */
+    text-align: center;
+    /* Centering cell text */
+    word-wrap: break-word;
+    overflow: hidden;
+    /* Hiding overflow text */
+    /* Adding ellipsis if text overflows */
+    /* Ensure all cells have same max width */
+    white-space: nowrap;
+    /* Prevent text from wrapping */
+}
+
+/* Ensure same size for all columns */
+.table td,
+.table th {
+    width: 150px;
+    /* Set same width for all cells */
+}
+
+/* Background color for even rows with reduced opacity */
+.table tbody tr:nth-of-type(even) {
+    background-color: rgba(var(--pbmit-global-color-rgb), 0.8) !important;
+    /* Adjust opacity */
+    color: white;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .table-container {
+        overflow-x: auto;
+    }
+
+    .table td {
+        word-wrap: break-word;
+        padding: 12px;
+        /* Adjust padding for mobile */
+        max-width: 120px;
+        /* Adjust max width for mobile */
+    }
+}
+
+
+
+
+.form-control {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding-left: 40px;
+    /* Space for the icon */
+    font-size: 1rem;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+    padding-right: 20px;
+    /* Padding for better spacing */
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: none;
+    /* Removed the background light effect */
+}
+
+.form-group {
+    position: relative;
+}
+
+.form-group .icon {
+    position: absolute;
+    top: 35%;
+    left: 12px;
+    transform: translateY(-50%);
+    color: #aaa;
+    font-size: 1.2rem;
+}
+
+.form-control::placeholder {
+    text-align: center;
+    /* Centered the placeholder text */
+    color: #aaa;
+    font-size: 1rem;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 14px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 6px 15px rgba(0, 123, 255, 0.2);
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    box-shadow: 0px 8px 20px rgba(0, 123, 255, 0.3);
+}
+
+.error {
+    display: none;
+    color: red;
+    font-size: 0.85rem;
+    margin-top: 5px;
 }
