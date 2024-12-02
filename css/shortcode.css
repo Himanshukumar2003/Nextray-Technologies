@@ -2933,7 +2933,8 @@ body {
 
 .pbmit-service-style-2:hover .pbmit-service-description {
 	opacity: 1;
-	height: 60px;
+	height: 50px;
+	overflow: hidden;
 }
 
 .pbmit-service-style-2.pbmit-ele-service .pbmit-service-btn {
@@ -2956,8 +2957,8 @@ body {
 .pbmit-ele-blog .pbmit-blog-btn,
 .pbmit-ele-service .pbmit-service-btn {
 	position: absolute;
-	bottom: 0;
-	right: 0;
+	bottom: -14px;
+	right: 5px;
 	border-radius: 50%;
 	width: 50px;
 	height: 50px;
@@ -3693,6 +3694,10 @@ body {
 	background-color: var(--pbmit-light-color);
 	border-radius: 30px;
 	padding: 5px;
+}
+
+.pbmit-testimonial-style-2 .pbmit-service-title {
+	color: var(--pbmit-white-color) !important;
 }
 
 .pbmit-testimonial-style-2 .pbminfotech-box-content-inner {

@@ -23,6 +23,14 @@
     overflow: hidden;
 }
 
+.pbmit-service-style-2 .pbmit-service-title {
+    color: var(--pbmit-white-color);
+}
+
+.pbmit-service-style-2:hover .pbmit-service-title {
+    color: var(--pbmit-global-color);
+}
+
 /** Homepage 01 **/
 .about-one-leftbox {
     position: relative;
@@ -3092,7 +3100,7 @@ label.error {
 
 /**08 - Comment Form **/
 .form-control {
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     font-size: 14px;
     height: 60px;
     line-height: normal;
@@ -3236,7 +3244,7 @@ textarea.form-control {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 200px;
+    height: 150px;
     border-radius: 20px;
 }
 
@@ -3253,109 +3261,67 @@ footer h4 {
     align-items: center;
 }
 
-table {
-    border: 2px solid var(--pbmit-global-color);
-}
 
-/* Table container styling */
+
+/* Table container */
 .table-container {
-    border-radius: 0.25rem;
+    width: 100%;
+    margin: 20px auto;
     overflow-x: auto;
-    padding: 20px;
 }
 
-/* Table header styling */
-.table-header {
-    background-color: var(--pbmit-global-color) !important;
+/* Table styling */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
 }
 
-.table-header th {
-    background-color: transparent !important;
-    text-align: center;
-    /* Centering header text */
-    color: white !important;
-    font-weight: 700 !important;
-}
-
-/* Table row hover effect */
-.table-hover tbody tr:hover {
-    background-color: var(--pbmit-link-color-hover);
-    transition: background-color 0.3s ease;
-}
-
-/* Sticky table header */
-thead {
-    position: sticky;
-    top: 0;
+/* Table headers */
+.table th {
     background-color: var(--pbmit-global-color);
-    z-index: 1;
-    border-bottom: 2px solid #ddd;
-}
-
-/* Table body styling */
-.table tbody tr {}
-
-th {
-    color: white !important;
-}
-
-/* Hover effect on table rows */
-.table-hover>tbody>tr:hover>* {
-    background-color: var(--pbmit-link-color-hover, 0.5) !important;
     color: white;
-}
-
-th {
-    font-weight: 500;
-}
-
-/* Table cell styling - Ensuring same size, centering text, hiding overflow, and increasing padding */
-.table td,
-.table th {
-
-    padding: 10px;
-
-    /* Increased padding for all columns */
+    padding: 12px;
     text-align: center;
-    /* Centering cell text */
-    word-wrap: break-word;
-    overflow: hidden;
-    /* Hiding overflow text */
-    /* Adding ellipsis if text overflows */
-    /* Ensure all cells have same max width */
-    white-space: nowrap;
-    /* Prevent text from wrapping */
+    font-size: 16px;
 }
 
-/* Ensure same size for all columns */
-.table td,
-.table th {
-    width: 150px;
-    /* Set same width for all cells */
+/* Table data cells */
+.table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    font-size: 14px;
 }
 
-/* Background color for even rows with reduced opacity */
-.table tbody tr:nth-of-type(even) {
-    background-color: rgba(var(--pbmit-global-color-rgb), 0.8) !important;
-    /* Adjust opacity */
-    color: white;
+/* Hover effect for rows */
+.table tbody tr:hover {
+    background-color: #f1f1f1;
 }
 
-/* Responsive design for smaller screens */
+/* Responsive table for smaller screens */
 @media (max-width: 768px) {
-    .table-container {
-        overflow-x: auto;
+
+    .table th,
+    .table td {
+        font-size: 12px;
+        padding: 8px;
     }
 
-    .table td {
-        word-wrap: break-word;
-        padding: 12px;
-        /* Adjust padding for mobile */
-        max-width: 120px;
-        /* Adjust max width for mobile */
+    .table-container {
+        padding: 0 10px;
     }
 }
 
+/* Zebra striping */
+.table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
 
 
 
@@ -3419,4 +3385,28 @@ th {
     color: red;
     font-size: 0.85rem;
     margin-top: 5px;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+}
+
+
+.product {
+    display: none;
+}
+
+.active-product {
+    display: block !important;
+
+    /* Show when active */
+}
+
+
+/* Highlight the active button */
+.patners-card.active-btn {
+    background-color: var(--pbmit-global-color) !important;
+
+    transition: all 0.3s ease;
 }

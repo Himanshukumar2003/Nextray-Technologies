@@ -33,8 +33,6 @@
 	-------------------------------------*/
 
 
-
-
 	function showProducts(id) {
 		document.querySelectorAll('.swiper-container-two').forEach(container => {
 			container.style.display = 'none';
