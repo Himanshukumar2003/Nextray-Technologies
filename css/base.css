@@ -16,29 +16,39 @@ INDEX:
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet');
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet');
 
+
+
 :root {
-    --pbmit-global-color: #bb9a65;
-    --pbmit-secondary-color: #403226;
+    --pbmit-global-color: #0078d4;
+    /* Primary Blue */
+    --pbmit-secondary-color: #003a70;
+    /* Dark Blue */
     --pbmit-light-color: #f6f6f6;
     --pbmit-light-color-2: #f8f8f8;
     --pbmit-white-color: #ffffff;
+    /* Pure White */
     --pbmit-white-color-rgb: 255, 255, 255;
-    --pbmit-blackish-color: #403226;
-    --pbmit-blackish-color-rgb: 64, 50, 38;
-    --pbmit-link-color-normal: #403226;
-    --pbmit-link-color-hover: #bb9a65;
-    --pbmit-global-color-rgb: 187, 154, 101;
-    --pbmit-secondary-color-rgb: 64, 50, 38;
+    --pbmit-blackish-color: #003a70;
+    /* Dark Blue for Blackish Alternative */
+    --pbmit-blackish-color-rgb: 0, 58, 112;
+    --pbmit-link-color-normal: #003a70;
+    /* Dark Blue */
+    --pbmit-link-color-hover: #0078d4;
+    /* Primary Blue */
+    --pbmit-global-color-rgb: 0, 120, 212;
+    --pbmit-secondary-color-rgb: 0, 58, 112;
     --pbmit-responsive-breakpoint: 1200px;
 
     --pbmit-body-typography-font-family: 'Roboto', sans-serif;
     --pbmit-body-typography-variant: 300;
     --pbmit-body-typography-font-size: 16px;
     --pbmit-body-typography-line-height: 1.6;
-    --pbmit-body-typography-color: #666666;
+    --pbmit-body-typography-color: #333333;
+    /* Neutral Text Color */
 
     --pbmit-heading-typography-font-family: "Space Grotesk", sans-serif;
-    --pbmit-heading-color: #403226;
+    --pbmit-heading-color: #003a70;
+    /* Dark Blue */
     --pbmit-heading-font-variant: 700;
 
     --pbmit-btn-typography-font-family: "Space Grotesk", sans-serif;
@@ -46,6 +56,8 @@ INDEX:
     --pbmit-btn-typography-font-size: 16px;
     --pbmit-btn-typography-line-height: 24px;
 }
+
+
 
 /*----------------------------------------*/
 /* 00 - General 

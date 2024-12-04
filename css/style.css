@@ -3410,3 +3410,8 @@ footer h4 {
 
     transition: all 0.3s ease;
 }
+
+
+.list-group-item {
+    list-style-type: disc !important;
+}

@@ -4453,7 +4453,7 @@ body {
 }
 
 .footer-style-1 .pbmit-footer-text-area {
-	background: #30251b;
+	background: darkblue;
 	margin-top: 40px;
 }
 
@@ -5028,7 +5028,7 @@ body {
 .list-group-borderless .list-group-item {
 	display: flex;
 	font-size: inherit;
-	align-items: center;
+	align-items: start;
 	padding-bottom: calc(5px/2);
 	padding: 0;
 	margin-bottom: 5px;
@@ -5046,7 +5046,7 @@ body {
 	color: var(--pbmit-blackish-color);
 	display: flex;
 	position: relative;
-	top: 0px;
+	top: 7px;
 	line-height: normal;
 }
 
