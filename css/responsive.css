@@ -32,6 +32,8 @@ body {
 	}
 }
 
+
+
 @media (max-width: 1500px) {
 
 	/*=== Homepage 02 ===*/
@@ -776,6 +778,7 @@ body {
 		background-color: #fff;
 		z-index: 99;
 		top: 82px;
+		color: black;
 	}
 
 	.main-menu .navigation>li {
@@ -2404,6 +2407,10 @@ body {
 @media(max-width:767px) {
 
 	/*=== Section-Padding ===*/
+	.pbmit-logo-button-area img {
+		width: 130px !important;
+	}
+
 	.section-xl {
 		padding-top: 60px;
 		padding-bottom: 60px;
@@ -4010,8 +4017,8 @@ body {
 
 	/*=== Header ===*/
 	.site-navigation ul.navigation>li>a {
-		height: 100px;
-		line-height: 100px;
+		height: 80px;
+		line-height: 80px;
 		float: left;
 		min-height: 1px;
 		vertical-align: top;

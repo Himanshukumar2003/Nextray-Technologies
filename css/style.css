@@ -3393,15 +3393,7 @@ footer h4 {
 }
 
 
-.product {
-    display: none;
-}
 
-.active-product {
-    display: block !important;
-
-    /* Show when active */
-}
 
 
 /* Highlight the active button */
@@ -3414,4 +3406,11 @@ footer h4 {
 
 .list-group-item {
     list-style-type: disc !important;
+}
+
+
+footer img {
+    width: 160px;
+    height: 100px;
+    border-radius: 20px;
 }
