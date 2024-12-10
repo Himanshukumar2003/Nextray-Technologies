@@ -2240,6 +2240,51 @@ body {
 @media(max-width:991px) {
 
 	/*=== Section-Title ===*/
+
+
+
+
+
+	.about-section-abustote-img img {
+
+		margin-bottom: 20px;
+	}
+
+
+	.about-section-contant {
+		padding-left: 0px !important;
+	}
+
+	.image-main {
+		margin-bottom: 20px;
+	}
+
+
+	.about-section-contant {
+		padding-left: 0px !important;
+	}
+
+	.image-container {
+		position: relative;
+		width: 100%;
+		height: 100% !important;
+
+	}
+
+
+
+	.image-container .image-overlay {
+		position: static !important;
+		display: none;
+	}
+
+
+
+
+
+
+
+
 	.pbmit-heading-subheading .pbmit-title {
 		font-size: 45px;
 		line-height: 50px;
